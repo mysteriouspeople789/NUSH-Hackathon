@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NUSH Hackathon 2020</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+</head>
+<body>
+    <div class="main">
+        <!--<div class="nav-tab">
+          <button class="status" onclick="openCity('London')">Get status</button>
+            <button class="feature" onclick="openCity('Paris')">Feature1</button>
+        </div>-->
+        <div id="alert"></div>
+        <div id="demo">demo0</div>
+        <div id="demo1"></div>
+        <button onclick="start()">Click to start</button>
+        <iframe id="mapbox"
+        src='https://api.mapbox.com/styles/v1/mapbox/streets-v11.html?title=false&zoomwheel=true&access_token=pk.eyJ1IjoibXlzdGVyaW91c3Blb3BsZTc4OSIsImEiOiJja2U0aXh6OTAwdGhwMnptd2hxMDk4bnc3In0.RNTFqlK9ERYkwftrrDAv5A#15/1.3521/103.8198'>
+        </iframe> 
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+         <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    
+
+    <!-- Initialize Firebase -->
+    <script>
+        const firebaseConfig = {
+              apiKey: "AIzaSyDq8c-UEecGdpqb6jZ8XjLrqvMoAto8XdE",
+              authDomain: "nush-hackathon.firebaseapp.com",
+              databaseURL: "https://nush-hackathon.firebaseio.com",
+              projectId: "nush-hackathon",
+              storageBucket: "nush-hackathon.appspot.com",
+              messagingSenderId: "811610869752",
+              appId: "1:811610869752:web:a0a8202ef5ed8028acd00d",
+              measurementId: "G-L9MVSVGLLW"
+            };
+
+        firebase.initializeApp(firebaseConfig);
+        console.log(firebase)
+          // Get a reference to the database service
+        var database = firebase.database();
+        console.log(database)
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

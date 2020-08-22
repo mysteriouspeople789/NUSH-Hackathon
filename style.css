@@ -1,0 +1,28 @@
+#alert {
+	width: 100vw;
+	text-align: center;
+	font-size: 50px;
+	color: red;
+}
+
+/*.nav-tab button {
+	padding: 50vw, 16px;
+}*/
+
+#mapbox {
+	height: 75vh;
+	width: 100%;
+	flex: 1;
+}
+
+.main {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+}
+
+#demo {
+	display: none;
+}
